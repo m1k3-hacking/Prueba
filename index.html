@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <script src="./js/reloj.js"></script>
+    <link rel="stylesheet" href="./css/reloj.css">
 </head>
-<body>
+<body onload="reloj()">
     <div>
         <h1>
             <em>Registro</em>
@@ -25,6 +27,17 @@
         <right><input type="button" value="Enviar"></right>
     </form>
     </div>
+    <center>
+        <div class="contenedor">
+                <h1>Reloj&#x23F0; en JavaScript: &#x1F4BD; </h1>
+                
+                <form name="form_reloj" id="reloj">
+                    <input type="text" name="reloj" size="30" id="manecillas" onfocus="window.document.form_reloj.reloj.blur()">
+                </form>
+                <p></p>
+                <span class="cargador"></span>
+        </div>
+    </center>
     <h1>Esta Prueba Funciono74</h1>
 </body>
 </html>
